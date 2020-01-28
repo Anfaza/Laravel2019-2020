@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('test',function(){
+    $name = request('name');
+
+return view('test',[
+    'name'=> request ('name')
+    ]);
 });
